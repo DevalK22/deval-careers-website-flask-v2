@@ -6,7 +6,7 @@
                 <h5 class="card-title">{{job['title']}}</h5>
                 <p class="card-text">Location: {{job['location']}}</p>
                 {% if 'salary' in job%}
-                 <p class="card-text text-muted">Salary: {{job['salary']}}</p>
+                 <p class="card-text text-muted">Salary: {{job['currency']}} {{job['salary']}}</p>
                 {% endif%}
             </div>
             <a href="#" class="btn btn-primary">Apply</a>
